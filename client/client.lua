@@ -8,7 +8,6 @@ local blackoutVehicle = Config.BlackoutVehicle
 local disable = Config.Disabled
 
 RegisterNetEvent('QBCore:Client:OnPlayerLoaded', function()
-    disable = false
     TriggerServerEvent('qb-weathersync:server:RequestStateSync')
 end)
 
